@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>demo.cicd.dsf</groupId>
+	<artifactId>DemoDSFProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.temenos.maven</groupId>
+		<artifactId>t24-core-tafj</artifactId>
+		<version>22.0</version>
+	</parent>
+
+	<properties>
+		<t24lib>${t24Lib}</t24lib>
+		<t24version>22.0</t24version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.temenos.tafj</groupId>
+			<artifactId>TAFJClient</artifactId>
+			<version>${tafjVersion}</version>
+			<scope>system</scope>
+			<systemPath>${tafjHome}/lib/TAFJClient.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+  <modules>
+    <!-- <module>DemoDSFCode</module>
+    <module>DemoDSFData</module> -->
+    <module>DemoDSFMultiPackage/module/pom.xml</module>
+  </modules>
+</project>

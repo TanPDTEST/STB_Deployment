@@ -1,0 +1,40 @@
+{
+  "header" : {
+    "id" : "VND",
+    "dsfApiType" : "CURRENCY",
+    "dsfApiComponent" : "t24data",
+    "dsfApiPhase" : "main",
+    "metadata" : {
+      "installed" : "YES",
+      "release" : "R22"
+    },
+    "ttag" : {
+      "t24" : {
+        "initialSystemBuild" : "NO",
+        "inheritIncludeDetails" : "RETGEN*TSBNPL"
+      }
+    }
+  },
+  "body" : {
+    "NO.OF.DECIMALS" : "0",
+    "DAYS.FORWARD" : "0",
+    "MIN.ROUND.TYPE" : "1",
+    "PRECIOUS.METAL" : "NO",
+    "INTEREST.DAY.BASIS" : "B 366/360",
+    "RANK" : "99",
+    "DAYS.DELIVERY" : "1",
+    "CASH.ROUND.TYPE" : "1",
+    "CLS.CCY" : "NO",
+    "CCY.NAME" : [ {
+      "CCY.NAME" : "DONG (VIET-NAM)"
+    } ],
+    "CURRENCY.MARKET" : [ {
+      "DEFAULT.SPREAD" : "0.15",
+      "BUY.RATE" : "1.5",
+      "SELL.RATE" : "1.2",
+      "NEGOTIABLE.AMT" : "6000000",
+      "CURRENCY.MARKET" : "1",
+      "MID.REVAL.RATE" : "1.35"
+    } ]
+  }
+}

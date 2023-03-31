@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>demo.cicd.dsf</groupId>
+		<artifactId>DemoDSFProject</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+    <groupId>demo.cicd.dsf</groupId>
+	<artifactId>DemoDSFCode</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+	
+	<build>
+		<finalName>DemoDSFCode</finalName>
+    </build>
+
+	<dependencies>
+		<!-- TAFJ libs for Java -->
+        <dependency>
+            <groupId>com.temenos.tafj</groupId>
+            <artifactId>TAFJCommon</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${tafjHome}/lib/TAFJCommon.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.temenos.tafj</groupId>
+            <artifactId>TAFJCompiler</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${tafjHome}/lib/TAFJCompiler.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.temenos.tafj</groupId>
+            <artifactId>TAFJAPICommon</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${tafjHome}/lib/TAFJAPICommon.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.temenos.tafj</groupId>
+            <artifactId>TAFJClient</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${tafjHome}/lib/TAFJClient.jar</systemPath>
+        </dependency>
+    
+        <!-- T24 libs for Java -->
+        <dependency>
+            <groupId>com.temenos.t24</groupId>
+            <artifactId>EB_TemplateHook</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${t24Lib}/EB_TemplateHook.jar</systemPath>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.temenos.t24</groupId>
+            <artifactId>ST_CurrencyConfig</artifactId>
+            <version>${t24version}</version>
+            <scope>system</scope>
+            <systemPath>${t24Lib}/ST_CurrencyConfig.jar</systemPath>
+        </dependency>
+
+	</dependencies>
+
+</project>
